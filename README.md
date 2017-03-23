@@ -1,4 +1,4 @@
-#Index file counter
+# Index file counter
 
 Copyright (c) 2017 Genome Research Ltd.
 
@@ -10,7 +10,7 @@ When asked by the management teams for stats on index file capability usage by o
 
 Remember this script takes advantage of our data storage structure at the Sanger Institute.  If you organise your user files differently it will not work.  However you are free to adjsut the script to allow it to wiork in your system.
 
-##INSTRUCTIONS
+## INSTRUCTIONS
 Place the script into the top directory of your users .fcs file storage area.
 
 Run the script, it will take a while, but it will also display the filename and path of every index file it finds to let you know it is running.
