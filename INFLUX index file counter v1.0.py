@@ -1,7 +1,7 @@
 #Copyright (c) 2017 Genome Research Ltd.
 
 #Index file counter
-#v1.0 Jan 2017
+#v1.0 Jun 2017
 #Python 3.5 (2016)
 #Author : Christopher Hall, Wellcome Trust Sanger Institute, christopher.hall@sanger.ac.uk
 
@@ -13,11 +13,9 @@
 #Counts all the index files in it's folder and subfolders and displays the statisitics.  
 #We orgainise our files using one subfolder per user and another subfolder per experiment.  This script uses this routine to count the number of experiments.  i.e. User1\01jan2017\file.fcs
 
-import glob
 import os
-import csv
 from collections import Counter
-import re
+
 counter=0
 expt=[]
 folders=[]
@@ -28,7 +26,7 @@ for dirName, subdirList, fileList in os.walk(rootDir): #walks through the subdir
 	for x in fileList:
 		if x.endswith('.fcs'): #looks for my file type
 			filename = os.path.join(dirName, x) #creates a filename and path to open
-			f = open(filename,'r') #opens the file
+			f = open(filename,'r', encoding='Latin-1') #opens the file
 			for whereisit in f.readlines(): #reads the lines (its much faster using this)
 				if "INDEXSORTPOSITIONS" in whereisit: # looks for my dtring in the file
 					print ("index file ",f.name)
