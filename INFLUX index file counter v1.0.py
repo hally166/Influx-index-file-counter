@@ -39,7 +39,7 @@ for dirName, subdirList, fileList in os.walk(rootDir): #walks through the subdir
 #This produses the overal stats					
 numfold=set(expt)
 usernum=set(folders)
-writecount="number of indivdual index files",counter
+writecount="number of individual index files",counter
 writeexpt="number of index experiments",len(numfold)
 writeuser="number of index users",len(usernum)
 statstowrite=str(writecount)+'\n'+str(writeexpt)+'\n'+str(writeuser)+'\n'
