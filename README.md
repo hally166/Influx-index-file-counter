@@ -6,9 +6,9 @@ Author : Christopher Hall, Wellcome Trust Sanger Institute, christopher.hall@san
 
 http://www.sanger.ac.uk/science/groups/cytometry-core-facility
 
-WWhen asked by management for statistics on index sorting by our customers we wrote this script.  It will trawl though the folders and count the number of index .fcs files and the number of folders that contain them. We use a folder structure that allows us to count index experiments and users.  It is: C:\INFLUX files\User 1\01Jan17\somefile.fcs
+When asked by management for statistics on index sorting by our customers we wrote this script.  It will trawl though the folders and count the number of index .fcs files and the number of folders that contain them. We use a folder structure that allows us to count index experiments and users.  It is: C:\INFLUX files\User 1\01Jan17\somefile.fcs
 
-Remember this script takes advantage of our data storage structure at the Sanger Institute.  If you organise your user files differently it will not work.  However you are free to adjsut the script to allow it to wiork in your system.
+Remember this script takes advantage of our data storage structure at the Sanger Institute.  If you organise your user files differently it will not work.  However you are free to adjust the script to allow it to wiork in your system.
 
 ## INSTRUCTIONS
 Place the script into the top directory of your users .fcs file storage area.
